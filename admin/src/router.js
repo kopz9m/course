@@ -26,14 +26,12 @@ export default new Router({
         {path: "", redirect: "/login",},
         {path: "/login", component: Login},
         // 2022
-        {path: "/admin", component: Admin},
+        //{path: "/admin", component: Admin},
 
-        {path: "/",
+        {path: "/admin",
             name: "admin",
             component: Admin,
-            meta: {
-                loginRequire: true
-            },
+            //meta: {loginRequire: true},
             children: [{
                 path: "welcome",
                 name: "welcome",
